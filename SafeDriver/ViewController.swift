@@ -26,11 +26,6 @@ import UIKit
         counterLabel.text = String(scoreInt)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     @IBAction func StartStop(_ sender: AnyObject) {
             if scoreInt == 0 {
 
@@ -59,13 +54,12 @@ import UIKit
     }
 
         @objc func updateCounter() {
-        
-        timerInt -= 1
- 
+            timerInt -= 1
+
         if timerInt == 2 {
 
-            trafficLight.image = UIImage(named: "TrafficLight3")
-
+                trafficLight.image = UIImage(named: "TrafficLight3")
+         
         } else if timerInt == 1 {
 
             trafficLight.image = UIImage(named: "TrafficLight2")
@@ -84,9 +78,9 @@ import UIKit
         }
     }
 
-        @objc func  updateScoreTimer() {
+        @objc func updateScoreTimer() {
          scoreInt += 1
 
          counterLabel.text = String(scoreInt)
           }
-    }
+}
