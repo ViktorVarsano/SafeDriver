@@ -9,7 +9,6 @@ Created using Swift 5.3
 * [Launch](#launch)
 * [Screenshots](#screenshots)
 * [Video](#video)
-* [Reference APIs](#reference-apis)
 * [Support](#support)
 
 ## General Info:
