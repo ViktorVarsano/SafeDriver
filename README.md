@@ -25,7 +25,7 @@ Timers
 ## Features
 :dart:   A button can be tapped after the green light is on. Test your reaction and see how long is your brake distance at 60 km/h.
 
-:dart:   Designed to be educational. `Proper preparation prevents from poor performance` 
+:dart:   Designed to be educational. "Proper preparation prevents from poor performance"
 
 
 ## Launch
