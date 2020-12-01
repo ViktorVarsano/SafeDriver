@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,9 +21,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x25-QD-9Gh">
-                                <rect key="frame" x="122" y="616" width="170" height="170"/>
+                                <rect key="frame" x="122" y="672" width="170" height="170"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="x25-QD-9Gh" secondAttribute="height" multiplier="1:1" id="SEy-EK-0tX"/>
+                                    <constraint firstAttribute="height" constant="170" id="25l-a4-plM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="30"/>
                                 <state key="normal" title="Start" backgroundImage="redButton">
@@ -34,55 +36,70 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrafficLight" translatesAutoresizingMaskIntoConstraints="NO" id="764-xx-mWk">
                                 <rect key="frame" x="0.0" y="44" width="414" height="228"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="764-xx-mWk" secondAttribute="height" multiplier="69:38" id="FNq-kn-rfV"/>
-                                    <constraint firstAttribute="width" secondItem="764-xx-mWk" secondAttribute="height" multiplier="69:38" id="YPM-fI-Zpe"/>
+                                    <constraint firstAttribute="height" constant="228" id="0LR-QI-TgS"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjO-Tf-MZN">
                                 <rect key="frame" x="20" y="310" width="374" height="243"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="243" id="NMd-H4-Cr0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8b-aT-lI6">
+                                <rect key="frame" x="32" y="494" width="350" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="8SP-HT-7FG"/>
+                                </constraints>
+                                <string key="text">Do You Enjoy Driving? We hope you do as much as we do!  With an average of speed of 60 km/h, your reaction time causes you brake distance of xx meters </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="SjO-Tf-MZN" firstAttribute="top" secondItem="764-xx-mWk" secondAttribute="bottom" constant="38" id="4wU-pl-iaq"/>
-                            <constraint firstItem="764-xx-mWk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6GP-Yb-DbV"/>
-                            <constraint firstItem="x25-QD-9Gh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="6Rx-Y2-nsC"/>
-                            <constraint firstItem="SjO-Tf-MZN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="B9N-hA-CSQ"/>
-                            <constraint firstItem="764-xx-mWk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ckc-cU-n47"/>
-                            <constraint firstItem="l8Q-oG-chY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ego-eA-dy2"/>
-                            <constraint firstItem="l8Q-oG-chY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TKU-xi-edO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x25-QD-9Gh" secondAttribute="trailing" constant="122" id="Tge-wN-Hvg"/>
-                            <constraint firstItem="764-xx-mWk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UZx-SX-ihU"/>
-                            <constraint firstItem="l8Q-oG-chY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vvu-PZ-oaH"/>
-                            <constraint firstItem="764-xx-mWk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="W7j-Xz-9Oz"/>
-                            <constraint firstAttribute="bottom" secondItem="l8Q-oG-chY" secondAttribute="bottom" id="XGf-WQ-aTY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SjO-Tf-MZN" secondAttribute="trailing" constant="20" id="aSf-Hg-vd9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x25-QD-9Gh" secondAttribute="bottom" constant="76" id="cRE-Zm-nKj"/>
-                            <constraint firstItem="764-xx-mWk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="e3P-jj-WOO"/>
-                            <constraint firstItem="764-xx-mWk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ueo-wZ-4H6"/>
-                            <constraint firstItem="x25-QD-9Gh" firstAttribute="top" secondItem="SjO-Tf-MZN" secondAttribute="bottom" constant="63" id="zNW-ST-LfU"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SjO-Tf-MZN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1Db-Yn-hhs"/>
+                            <constraint firstItem="764-xx-mWk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="39m-Px-aY2"/>
+                            <constraint firstItem="764-xx-mWk" firstAttribute="centerX" secondItem="SjO-Tf-MZN" secondAttribute="centerX" id="3M8-Mn-tU3"/>
+                            <constraint firstItem="l8Q-oG-chY" firstAttribute="trailing" secondItem="764-xx-mWk" secondAttribute="trailing" id="Cr6-Lj-fUy"/>
+                            <constraint firstItem="l8Q-oG-chY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hre-6y-qQc"/>
+                            <constraint firstItem="q8b-aT-lI6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Qau-tP-IMw"/>
+                            <constraint firstItem="SjO-Tf-MZN" firstAttribute="top" secondItem="764-xx-mWk" secondAttribute="bottom" constant="38" id="VFX-BW-lkj"/>
+                            <constraint firstItem="x25-QD-9Gh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="ViP-CN-64Q"/>
+                            <constraint firstItem="SjO-Tf-MZN" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ejt-r9-RB5"/>
+                            <constraint firstItem="q8b-aT-lI6" firstAttribute="centerX" secondItem="x25-QD-9Gh" secondAttribute="centerX" id="gvS-6V-MLd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x25-QD-9Gh" secondAttribute="bottom" constant="20" id="gw9-Tb-LWB"/>
+                            <constraint firstItem="l8Q-oG-chY" firstAttribute="leading" secondItem="764-xx-mWk" secondAttribute="leading" id="nDt-nY-mvj"/>
+                            <constraint firstItem="x25-QD-9Gh" firstAttribute="top" secondItem="q8b-aT-lI6" secondAttribute="bottom" constant="8" id="olU-lr-0z1"/>
+                            <constraint firstItem="SjO-Tf-MZN" firstAttribute="centerX" secondItem="x25-QD-9Gh" secondAttribute="centerX" id="pzn-gV-ST0"/>
+                            <constraint firstItem="764-xx-mWk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="u2y-1d-c1p"/>
+                            <constraint firstItem="l8Q-oG-chY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="xEU-40-LMX"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="counterLabel" destination="SjO-Tf-MZN" id="mgm-LD-JAm"/>
+                        <outlet property="enjoyDrivingLabel" destination="q8b-aT-lI6" id="lrh-uL-mKE"/>
                         <outlet property="startStopButton" destination="x25-QD-9Gh" id="4p5-VS-3iX"/>
                         <outlet property="trafficLight" destination="764-xx-mWk" id="EUh-ss-rqn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6171" y="521"/>
+            <point key="canvasLocation" x="-6171.0144927536239" y="520.98214285714289"/>
         </scene>
     </scenes>
     <resources>
         <image name="Road" width="4000" height="2666"/>
         <image name="TrafficLight" width="550" height="900"/>
         <image name="redButton" width="1353" height="1353"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
